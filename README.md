@@ -9,13 +9,13 @@ The Esports Club of California State University Sacramento is an "Electronic Spo
 
 ## Developers
 - Daniel Sagredos
-	<p>- Design and Communications Lead
+	<p>- Design and Communications Lead <br>
 	Front End Developer</p>
 - Martin Dominguez
-	<p>- Front End Lead
+	<p>- Front End Lead <br>
 	Front End Developer </p>
 - Derrick Mar
-	<p>- Back End Lead
+	<p>- Back End Lead <br>
 	Back End Developer </p>
 
 	
