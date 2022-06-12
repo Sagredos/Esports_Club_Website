@@ -1,0 +1,1075 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	min-width: 320px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+.header {
+	background: rgb(195, 182, 129);
+	height: 6.7rem;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown{
+	display: none;
+	position: relative;
+	margin-right: 40px;
+
+}
+
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	border-radius: 2px;
+	border: #000;
+	right:0;
+	display: none;
+	position: absolute;
+	background-color: rgb(192, 178, 124);
+	min-width: 160px;
+	box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 2;
+}
+  
+ /* Links inside the dropdown */
+.dropdown-content a {
+	color:rgb(5, 76, 56);
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color:rgb(223, 207, 144)}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+
+.menuImage{
+	width: 40px;
+	height: 40px;
+}
+
+.circle{
+	background: radial-gradient(circle at center, white 100%, transparent 61%);
+	top: 1000;
+	width: 500px;
+	height: 40px;
+	position: relative;
+	
+	border-radius: 10%;
+	overflow: hidden;
+	border: 4px solid green;
+}
+
+.zIndex{
+	z-index: 1;
+	position:relative; 
+	top: 15px; 
+	left: 140px;
+}
+
+.navButtons:hover {
+	opacity: 0.7;
+}
+
+.background-image {
+	background-image: url('./images/background_color.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 50%;
+}
+
+.esportsLogo {
+	width: 320px;
+	height: 106.75px;
+	align-items: left;
+	float: left;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.esportsLogo2 {
+	margin-top: 5px;
+	width: 160px;
+	height: 53.375px;
+	align-items: left;
+	float: left;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+/* Start of slide show */
+
+/* Slideshow container */
+.slideshow-container {
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: auto;
+}
+  
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+  
+  
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+/* end on slide container css */
+
+.homeImg {
+	width: 100%;
+	height: auto;
+	display: block;
+	position: relative;
+}
+.homeImg2 {
+	width: 102%;
+	height: auto;
+	display: block;
+	position: relative;
+}
+
+#text-container {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	background-color: rgba(211, 211, 211, 0.2);
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#match-icon-padding{
+	padding: 0;
+	margin: 0;
+	
+}
+
+.logoSac {
+	width: 370px;
+	height: 102px;
+	padding-top: 10px;
+	float: left;
+	padding-left: 50px;
+	padding-right: 30px;
+}
+
+.lineUp {
+	cursor: pointer;
+	font-weight: 150px;
+	display: inline;
+	text-align: left;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 25px;
+	color: rgb(3, 76, 56);
+}
+
+.lineUpTeams {
+	cursor: pointer;
+	font-weight: 150px;
+	display: inline;
+	text-align: left;
+	padding-left: 125px;
+	padding-right: 100px;
+	padding-top: 25px;
+	color: rgb(3, 76, 56);
+}
+body {
+	background: rgb(241, 241, 241);
+}
+
+a {
+	color: rgb(3, 76, 56);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.event:hover {
+	opacity: 0.8;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+}
+
+.join-button {
+	background: white;
+	border: none;
+	display: inline;
+	border-radius: 10px;
+	cursor: pointer;
+	color: rgb(0, 78, 56);
+	padding: 0.6rem;
+	padding-left: 0.4rem;
+	padding-bottom: 0.8rem;
+	font-size: 15px;
+	margin-right: 0.2rem;
+	align-items: left;
+}
+
+.join-button:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+}
+
+.nav {
+	position: relative;
+	float: right;
+	margin-top: 2rem;
+	margin-right: 0.5rem;
+}
+
+.navButtons {
+	text-align: right;
+	padding-left: 1.0rem;
+	padding-right: 1.0rem;
+	padding-top: 0.8rem;
+	width: 20%;
+}
+
+#navRight {
+	float: right;
+	margin-top: 20px;
+}
+
+#extraPadding {
+	float: left;
+	padding-right: 50px;
+	padding-left: 30px;
+}
+
+.footInfo {
+	color: white;
+	font-size: large;
+	float: right;
+	padding-right: 3%;
+	padding-top: 1.2rem;
+}
+
+.numberHref {
+	color: rgb(195, 182, 129);
+}
+
+p.maxWidth1 {
+	max-width: 1150px;
+	text-align: center;
+}
+
+h1 {
+	margin-top: 0;
+	text-align: center;
+	color: rgb(3, 76, 56);
+}
+.coverPageFont {
+	color: rgb(3, 76, 56);
+	font-size: 25px;
+	font-family: liberator;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.liberatorFont {
+	color: rgb(0, 78, 56);
+	font-size: 22px;
+	font-family: liberator;
+	text-align: center;
+}
+
+.liberatorFontBlack {
+	color: black;
+	font-size: 22px;
+	font-family: liberator;
+	text-align: center;
+}
+
+.liberatorFontWhite {
+	color: white;
+	font-size: 22px;
+	font-family: liberator;
+	text-align: center;
+	
+}
+
+.liberatorFontWhiteName {
+	color: white;
+	font-size: 22px;
+	font-family: liberator;
+	text-align: center;
+	text-shadow: 5px 5px black;
+	
+}
+
+.match-title {
+	color: rgb(0, 78, 56);
+	font-size: 3rem;
+	font-family: liberator;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.watch-title {
+	color: rgb(0, 78, 56);
+	font-size: 3rem;
+	font-family: liberator;
+	margin-top: 1rem;
+}
+
+.watch-title2 {
+	color: rgb(0, 78, 56);
+	font-size: 3rem;
+	font-family: liberator;
+	margin-top: 1rem;
+}
+
+.liberatorFontLarge {
+	color: rgb(0, 78, 56);
+	font-size: 35px;
+	font-family: liberator;
+	text-align: center;
+}
+
+.liberatorFontLargeName {
+	color: rgb(0, 78, 56);
+	font-size: 35px;
+	font-family: liberator;
+	text-align: center;
+	text-shadow: 1px 3px black;
+}
+
+.liberatorFontLargeWhite {
+	color: white;
+	font-size: 35px;
+	font-family: liberator;
+	text-align: center;
+	text-shadow: 5px 5px black;
+}
+
+.liberatorFontXLarge {
+	color: rgb(0, 78, 56);
+	font-size: 50px;
+	font-family: liberator;
+	text-align: center;
+}
+
+.liberatorFontLargeBlack {
+	color: rgb(0, 0, 0);
+	font-size: 35px;
+	font-family: liberator;
+	text-align: center;
+	
+}
+
+
+.box {
+	
+	height: 50px;
+	text-align: center ;
+	
+	background-color: rgb(0, 78, 56);
+  }
+
+@font-face {
+	src: url('fonts/Liberator.ttf');
+	font-family: liberator;
+}
+
+.aside-container {
+	width: 100%;
+	height: 40rem;
+	margin-top: 3rem;
+}
+
+/* For twiter container */
+.twitter-container {
+	margin-left: 6rem;
+	margin-bottom: 3rem;
+	width: 30%;
+	position: relative;
+	float: left;
+}
+
+/*For match page event list */
+.container-matches {
+	margin: 0;
+	align-items: center;
+	margin-right: 5rem;
+	margin-left: 5rem;
+	margin-bottom: 3rem;
+}
+
+/*Resize the game images correctly*/
+.game-image-resize {
+	position: relative;
+	width: 3%;
+}
+
+/*image list conrtainer */
+.list-images {
+	text-align: center;
+	margin: 2rem;
+}
+
+.list-imagesTeams {
+	text-align: center;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	
+}
+
+.game-list-image:hover {
+	opacity: 0.8;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+}
+
+.game-list-image {
+	position: relative;
+	width: 3rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+.main-container {
+	position: relative;
+	width: 100%;
+	margin-bottom: 0;
+	margin-top: 3rem;
+	height: auto;
+	padding: 0;
+	align-items: center;
+}
+
+/* For the event list */
+.event-container {
+	width: 50%;
+	float: right;
+	margin: 0 auto;
+	position: relative;
+	margin-right: 2rem;
+}
+
+.event-container h3.year {
+	font-size: 2rem;
+	text-align: center;
+	padding-bottom: 0.5rem;
+	border-bottom: 0.2rem solid rgb(0, 78, 56);
+}
+
+.event-container .event {
+	box-shadow: 0 0.3rem 1rem -0.6rem rgba(0, 0, 0, 0.6);
+	display: flex;
+	border-radius: 0.5rem;
+	margin: 2rem 0;
+}
+
+.container-matches .event {
+	box-shadow: 0 0.3rem 1rem -0.6rem rgba(0, 0, 0, 0.6);
+	display: flex;
+	border-radius: 0.5rem;
+	margin: 2rem 0;
+}
+
+.event .event-left {
+	background-color: #222;
+	min-width: 8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #eee;
+	padding: 0.7rem 3rem;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.event .event-left .date {
+	font-size: 3rem;
+}
+
+.event .event-left .month {
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+.event .event-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 1.4rem;
+}
+
+.event .event-right h3.event {
+	font-size: 1.5rem;
+	margin: 1.5rem 0 0.8rem 0;
+	color: #218bbb;
+	text-transform: uppercase;
+}
+
+.event .event-right .event-timing {
+	background-color: #fff8ba;
+	display: flex;
+	align-items: center;
+	width: 4rem;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	font-size: 0.9rem;
+}
+
+.footer-container {
+	background: black;
+	bottom: 0;
+	position: relative;
+	height: 4rem;
+	clear: both;
+	border-top: 0.3rem outset rgba(20, 20, 19, 0.9);
+}
+
+.social-resize {
+	align-items: center;
+	float: center;
+	width: 30px;
+	height: 30px;
+}
+
+.social-resize:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+}
+
+
+.facebook-resize {
+	align-items: center;
+	float: center;
+	width: 45px;
+	height: 30px;
+	padding-left: 50px;
+	padding-top: 50px;
+}
+
+.overwatch-resize {
+	align-items: center;
+	float: center;
+	width: 45px;
+	height: 30px;
+	padding-left: 50px;
+	padding-top: 50px;
+}
+
+/* Title Container Watch Page */
+.TitleContainer{
+	margin-top: 4%;
+	position: relative;
+}
+
+.LeftTitle{
+	width: 50%;
+	text-align: center;
+	float: left;
+
+}
+
+.RightTitle{
+	width: 50%;
+	text-align: center;
+	margin-left: 50%;
+	
+}
+
+/* Upper Container Watch Page */
+.UpperContainer{
+	width: 100%;
+	height: 600px;
+	margin-top: 7%;
+	margin-bottom: 5%;
+}
+
+.twitch1 {
+	display: inline;
+	position: relative;
+	padding-left: 5%;
+}
+
+.youtubeTopRight {
+	display: inline;
+	position: relative;
+	padding-left: 10%;
+
+}
+
+#youtube-frame-topright{
+	width: 40%;
+	height: 100%;
+}
+/* Middle Container Watch Page */
+.MiddleContainer{
+	padding-bottom: 5%;
+}
+
+/* Bottom Container Watch Page */
+.BottomContainer{
+	width: 100%;
+	height: 250px;
+	align-items: center;
+
+}
+
+#youtube-frame-bottom1{
+	width: 14%;
+}
+#youtube-frame-bottom2{
+	width: 14%;
+}
+#youtube-frame-bottom3{
+	width: 14%;
+}
+#youtube-frame-bottom4{
+	width: 14%;
+}
+#youtube-frame-bottom5{
+	width: 14%;
+}
+
+.youtubeBottom1 {
+	display: inline;
+	position: relative;
+	padding-left: 5%;
+}
+.youtubeBottom2 {
+	display: inline;
+	position: relative;
+	padding-left: 4.9%;
+}
+.youtubeBottom3 {
+	display: inline;
+	position: relative;
+	padding-left: 4.9%;
+}
+.youtubeBottom4 {
+	display: inline;
+	position: relative;
+	padding-left: 4.9%;
+}
+.youtubeBottom5 {
+	display: inline;
+	position: relative;
+	padding-left: 4.9%;
+}
+
+/* End of Watch Page */
+
+.submit-button{
+	color: gold;
+	background-color: rgb(3, 76, 56);
+	border-radius: 7%;
+	padding: 5px;
+}
+
+.modal-title{
+	color: rgb(3, 76, 56);
+}
+
+.bg-modal {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.modal-content {
+	width: 300px;
+	height: 450px;
+	background-color: rgb(233, 233, 233);
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+
+input, 
+select {
+	width: 50%;
+	display: block;
+	margin: 10px auto;
+}
+
+/*Form input text elements */
+input[type=email]{
+	width: 100%;
+	padding: 12px;
+	border: 1px #000;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: none;
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: -50px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.teambody {
+	display: grid;
+	padding: 2rem;
+	grid-template-columns: 300px 1fr;
+	gap: 1rem;
+	align-items: center;
+	max-width: 800px;
+	margin: 0 auto;
+	font: 500 100%/1.5 system-ui;
+}
+.teamimg {
+	max-width: 100%;
+	height: auto;
+}
+
+.left {
+	margin-left: 8rem;
+	margin-bottom: 3rem;
+	width: 20%;
+	position: relative;
+	float: left;
+}
+/* For contact information and social media link container*/
+.right {
+	word-spacing: 5px;
+	margin: 0;
+	align-items: center;
+	margin-right: 5rem;
+	margin-left: 6rem;
+	margin-bottom: 3rem;
+}
+/*Creates a center border for splitting screen*/
+.centered {
+	position: relative;
+	
+	left: 25%;
+	transform: translate(auto, auto);
+	text-align: center;
+}
+
+/*Form input text elements */
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px #000;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: none;
+}
+
+/*Style for submit button on contact page*/
+input[type=submit] {
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 12px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/*Form container*/
+.formContainer {
+	border-radius: 5px;
+	padding: 20px;
+}
+
+.greenBg{
+	background-color: rgb(0, 78, 56);
+	margin-top: -0.1%;
+}
+.greenBg2{
+	background-color: rgb(0, 78, 56);
+	margin-top: -0.1%;
+	padding-bottom: 0.7%;
+}
+
+.goldBg{
+	background-color: rgb(195, 182, 129);
+	padding-top: 0.2%;
+	padding-bottom: 0.1%;
+}
+
+.greenBgTeams{
+
+	background-color: transparent;
+	background-image:
+    radial-gradient(
+		ellipse at center,
+		rgb(0, 78, 56, 0.5),
+      transparent 75%,
+	  transparent 0
+    );
+
+	margin-bottom: 3%;
+}
+
+.leftside{
+	
+	height: 50%;
+	width: 85%;
+}
+
+.rightside{
+	height: 50%;
+	width: 100%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+	p.delete {
+	   display:none;
+	}
+}
+
+
+/* Watch page media query*/
+@media screen and (max-width: 1000px ){
+
+	/* titles */
+	.watch-title {
+		color: rgb(0, 78, 56);
+		font-size: 3rem;
+		font-family: liberator;
+		position: relative;
+		left:50%;
+		top: 0px;
+	}
+
+	.watch-title2 {
+		position:relative;
+		left:1000px;
+		
+	}
+
+
+	.RightTitle{
+		margin-left: 25%;
+		margin-top: -5%;
+	}
+		
+
+	.twitch1{
+		display:flex;
+		height:90%;
+		width:187%;
+		position:relative;
+		bottom:0%;
+		left:7%;
+
+	}
+
+
+
+	.youtubeTopRight{
+		display:none;
+	}
+
+	#youtube-frame-topright{
+		width: 75%;
+		height: 80%;
+	}
+
+	.UpperContainer{
+		margin-bottom: 0%;
+	}
+
+	.MiddleContainer{
+		padding-bottom: 5%;
+	}
+
+	.BottomContainer{
+		height: 2200px;
+	}
+
+
+	.youtubeBottom1{
+		padding-left: 12%;
+	}
+
+	#youtube-frame-bottom1{
+		width:75%;
+		margin-bottom: 10%;
+		height:350px;
+		
+	}
+
+	.youtubeBottom2{
+		padding-left: 12%;
+	}
+	#youtube-frame-bottom2{
+		width: 75%;
+		margin-bottom: 10%;
+		height:350px;
+	}
+
+	.youtubeBottom3{
+		padding-left: 12%;
+	}
+	#youtube-frame-bottom3{
+		width: 75%;
+		margin-bottom: 10%;
+		height:350px;
+	}
+
+	.youtubeBottom4{
+		padding-left: 12%;
+	}
+	#youtube-frame-bottom4{
+		width: 75%;
+		margin-bottom: 10%;
+		height:350px;
+	}
+
+	.youtubeBottom5{
+		padding-left: 12%;
+	}
+	#youtube-frame-bottom5{
+		width: 75%;
+		margin-bottom: 10%;
+		height:350px;
+	}
+	
+}
+
+@media screen and (max-width: 1080px ){
+	.height-fix{
+		height: 650px;
+	}
+	.dropdown{
+		display: inline-block;
+	}
+	#navList{
+		display: none;
+	}
+	.zIndex{
+		left: -150px;
+	}
+
+
+}
+
+@media screen and (max-width: 300px ){
+	.leftside{
+		height: 100vh;
+		
+		
+	}
+	
+	.rightside{
+		height: 100vh;
+		
+	}
+}
+@media screen and (max-width: 850px ){
+	/* titles */
+	
+	.watch-title {
+		color: rgb(0, 78, 56);
+		font-size: 3rem;
+		font-family: liberator;
+		position: relative;
+		left:50%;
+		top: 0px;
+	}
+
+	.watch-title2 {
+		left:1000px;
+		margin-bottom: -30px;
+	}
+
+		
+	.youtubeTopRight{
+		display:none;
+	}
+
+
+	.twitch1{
+		display:flex;
+		height:90%;
+		width:187%;
+		position:relative;
+		bottom:0%;
+		left:7%;
+
+	}
+
+
+	.UpperContainer{
+		margin-bottom: 0%;
+	}
+
+}

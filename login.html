@@ -1,0 +1,65 @@
+<html doctype="">
+<head>
+    <title>Firebase Authentication</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="login-box">
+        <div class="left">
+            <h1 id="status">login</h1>
+            <input type="text" id="email" name="email" placeholder="E-mail" />
+            <input type="password" id="password" name="password" placeholder="Password" />
+            <input type="submit" id="login" name="login" value="Login" />
+        </div>
+    </div>
+</body>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+    import {
+        getAuth, createUserWithEmailAndPassword,
+        signInWithEmailAndPassword, onAuthStateChanged, signOut
+    } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+    const firebaseConfig = {
+        apiKey: "AIzaSyAqokPjgpp4dcdwZmXNRBXdaYvayaGGpyg",
+        authDomain: "senior-project-4f3bb.firebaseapp.com",
+        databaseURL: "https://senior-project-4f3bb-default-rtdb.firebaseio.com",
+        projectId: "senior-project-4f3bb",
+        storageBucket: "senior-project-4f3bb.appspot.com",
+        messagingSenderId: "160860532291",
+        appId: "1:160860532291:web:01005a9de5c82beb162ef6",
+        measurementId: "G-0BDYPJ0YY4"
+    };
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+    if (localStorage.getItem("auth") && localStorage.getItem("auth") != 'undefined' && localStorage.getItem("auth") != 'null') {
+        location.href = "esportSignup.html";
+    }
+
+    login.addEventListener('click', (e) => {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
+            const user = userCredential.user;
+            const dt = new Date();
+            update(ref(database, 'users/' + user.uid), {
+                last_login: dt,
+            })
+            localStorage.setItem("auth", JSON.stringify(auth));
+            location.href = "esportSignup.html";
+        }).catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert(errorMessage);
+        });
+    });
+    const user = auth.currentUser; onAuthStateChanged(auth, (user) => {
+        if (user) {
+            const uid = user.uid;
+        } else {
+        }
+    });
+</script>
+</html>

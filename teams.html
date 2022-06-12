@@ -1,0 +1,350 @@
+<html>
+  <head>
+    <title>Esports Teams</title>
+    <link href='style.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+  </head>
+
+  <!-- Transparent CSUS Background Image-->
+  <body class="background-image">
+    
+    <!---------------------------------------------------- Start of Header----------------------------------------------------------------------------------->
+    <div class="header">
+      <a href="index.html"><img src="images/esports.png" class="esportsLogo" alt="Esports logo" ></a>
+  
+      <div class="nav liberatorFont">
+        <nav>
+          <ul id="navList">
+            <!-- Join Button -->
+            <button class="join-button liberatorFont" id='button'>JOIN OUR TEAM</button>
+            <script src="index.js"></script>
+  
+            <!-- Header Links to Other Pages -->
+            <li><a href="watch.html" class="navButtons">WATCH</a></li>
+            <li><a href="teams.html" class="navButtons">TEAMS</a></li>
+            <li><a href="match.html" class="navButtons">MATCH</a></li>
+            <li><a href="about.html" class="navButtons">ABOUT</a></li>
+            <li><a href="contact.html" class="navButtons">CONTACT</a></li>
+          </ul>
+  
+          <!-- (Hamburger Style Menu for Mobile Devices)
+          Drop down form small screens, does not display with big screens -->
+          <div class="dropdown">
+            <img src="images/menuImg.png" class="menuImage"/>
+            <div class="dropdown-content">
+              <a href="watch.html"> WATCH </a>
+              <a href="teams.html"> TEAMS </a>
+              <a href="match.html">  MATCH </a>
+              <a href="about.html"> ABOUT </a>
+              <a href="contact.html"> CONTACT </a>
+            </div>
+          </div>
+            
+          <!-- Header Social Media Links -->
+          <ul class = "zIndex">
+            <a href="https://twitter.com/esports_sac" target="_blank" rel="noopener noreferrer"><img class="social-resize" src="images/twitter_icon.png"  alt="twitter logo"></a>
+            <a href="https://www.instagram.com/sacstateesportsclub/" target="_blank" rel="noopener noreferrer"><img class="social-resize " src="images/ig_icon.png" style = "position:relative; left: 35px;" alt="instagram logo"></a>
+            <a href="https://www.twitch.tv/sacstateesportsclub"target="_blank" rel="noopener noreferrer"><img class="social-resize" style = "position:relative; left: 70px;" src="images/twitch_icon.png"   alt="twitch logo"></a>
+            <a href="https://discord.gg/nRgzJXqMaK" target="_blank" rel="noopener noreferrer"><img class="social-resize " style = "position:relative; left: 105px;" src="images/discord_icon.png"  alt="discord logo"></a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-------------------------------------------------------------- End of Header------------------------------------------------------------------------>
+    
+    <!-- Teams Page Top Title -->
+    <h3 class="match-title green BG" id = "text-container"> CSUS TEAMS AND PLAYERS  </h3>
+
+    
+    
+
+   <!-- Start of List of front images (Database) 
+   <div class="list-images">
+    <a id="team1" href="#"></a>
+    <img src="images/valorant.png" class="game-list-image" alt="valorant image">
+    </a>
+    <a id="team2" href="#"><img src="images/leagueoflegends.png" class="game-list-image" alt="leagueoflegends image">
+    </a>
+    <a id="team3" href="#"><img src="images/overwatch.png" class="game-list-image" alt="overwatch image">
+    </a>
+    <a id="team4" href="#">
+      <img src="images/ssb.png" class="game-list-image" alt="super smash bros. image">
+    </a>
+   </div>
+   <div id="teamRows"></div>                   
+   End of List of front images (Database) -->
+
+
+
+    <!--------------------------------------------------------------- List of Game Icons------------------------------------------------------------->
+    <div class="list-imagesTeams"  >
+       <a href="#valorant-teams"></a><img src="images/valorant.png" class="game-list-image" alt="valorant image"></a>
+       <a href="#leagueoflegends-teams"><img src="images/leagueoflegends.png" class="game-list-image" alt="leagueoflegends image"></a>
+       <a href="#overwatch-teams"><img src="images/overwatch.png" class="game-list-image" alt="overwatch image"></a>
+       <a href="#ssbu-teams"><img src="images/ssb.png" class="game-list-image" alt="super smash bros. image"></a>
+    </div>
+    
+
+    <!---------------------------------------------------------------- Valorant Team Header------------------------------------------------------------>
+    <div class= "greenBg2" id = "valorant-teams">
+      <p class = "liberatorFontLargeWhite" >VALORANT<br></p>
+    </div>
+
+    <!-- Start of Valorant Team Bios -->
+    <!-- Valorant Player 1 -->
+    <div id = "text-container">
+      <img src="images/no-profile-pic-icon.jpg" style= "float:left; position:relative; left: 13%; margin-top: 0.6%" alt="no-profile-pic-icon" height="300" width="300">
+      <p style="position:relative; left:15%; min-width: 0px;  max-width: 50%; display: inline-block;" class = "liberatorFont center"> 
+        <span class = "liberatorFontLargeBlack"><br> Player Gamertag <br></span>
+        Player full name<br><br>
+        Position/Role:  Heroes/Champions:  <br><br>
+        Here is where the Bio/About the player text will be filled. The rest is just filler text. Lorem ipsum 
+        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+        <br><br><br><br><br><br>
+      </p>
+    </div>
+    
+    <!-- Valorant Player 2 -->
+    <div id = "text-container">
+      <img src="images/no-profile-pic-icon.jpg" style= "float:left; position:relative; left: 13%; margin-top: 0.6%" alt="no-profile-pic-icon" height="300" width="300">
+        <p style="position:relative; left:15%; min-width: 0px;  max-width: 50%; display: inline-block;" class = "liberatorFont center"> 
+          <span class = "liberatorFontLargeBlack"><br> Player Gamertag <br></span>
+          Player full name<br><br>
+          Position/Role:  Heroes/Champions:  <br><br>
+          Here is where the Bio/About the player text will be filled. The rest is just filler text. Lorem ipsum 
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+          <br><br><br><br><br><br>
+        </p>
+    </div>
+      
+    <!------------------------------------------------------------- League of Legends Team Header ------------------------------------------------------->
+    <div div class= "greenBg2" id = "leagueoflegends-teams">
+      <p class = liberatorFontLargeWhite>LEAGUE OF LEGENDS<br></p>
+    </div>
+     
+    <!-- Start of LoL Team Bios -->
+    <!-- LoL Player 1 -->  
+    <div id = "text-container">
+      <img src="images/no-profile-pic-icon.jpg" style= "float:left; position:relative; left: 13%; margin-top: 0.6%" alt="no-profile-pic-icon" height="300" width="300">
+      <p style="position:relative; left:15%; min-width: 0px;  max-width: 50%; display: inline-block;" class = "liberatorFont center"> 
+        <span class = "liberatorFontLargeBlack"><br> Player Gamertag <br></span>
+        Player full name<br><br>
+        Position/Role:  Heroes/Champions:  <br><br>
+        Here is where the Bio/About the player text will be filled. The rest is just filler text. Lorem ipsum 
+        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+        <br><br><br><br><br><br>
+      </p>
+    </div>
+
+    <!-- LoL Player 2 -->  
+    <div id = "text-container">
+      <img src="images/no-profile-pic-icon.jpg" style= "float:left; position:relative; left: 13%; margin-top: 0.6%" alt="no-profile-pic-icon" height="300" width="300">
+      <p style="position:relative; left:15%; min-width: 0px;  max-width: 50%; display: inline-block;" class = "liberatorFont center"> 
+        <span class = "liberatorFontLargeBlack"><br> Player Gamertag <br></span>
+        Player full name<br><br>
+        Position/Role:  Heroes/Champions:  <br><br>
+        Here is where the Bio/About the player text will be filled. The rest is just filler text. Lorem ipsum 
+        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+        <br><br><br><br><br><br>
+      </p>
+    </div>
+
+    <!------------------------------------------------------------ Overwatch Team Header------------------------------------------------------------------>
+    <div div class= "greenBg2" id="overwatch-teams">
+      <p class = liberatorFontLargeWhite>OVERWATCH<br></p>
+    </div>
+
+    <!-- Start of Overwatch Team Bios -->
+    <!-- Overwatch Player 1 --> 
+    <div id = "text-container">
+      <img src="images/DDayLAN.png" style= "float:left; position:relative; left: 13%; margin-top: 0.6%" alt="DDay" height="300" width="300">
+      <p style="position:relative; left:15%; min-width: 0px;  max-width: 50%; display: inline-block;" class = "liberatorFont center"> 
+        <span class = "liberatorFontLargeBlack"><br> dday <br></span>
+        Daniel Sagredos<br><br>
+        Position: Main Tank - Heroes: Reinhardt, Orisa <br><br>
+        DDay is a washed OW player. He is stuck in Reinhardtjail and ocassionally will hit some fatty shatty's.
+        When he is not getting fatty shatty's he is constantly feeding. Somehow Sacramento state wanted him as 
+        the main tank for their overwatch team.
+        <br><br><br><br><br><br>
+      </p>
+    </div>
+    
+    <!-- Overwatch Player 2 --> 
+    <div id = "text-container">
+      <img src="images/omi.png" style= "float:left; position:relative; left: 13%; margin-top: 0.6%" alt="Omi" height="300" width="300">
+      <p style="position:relative; left:15%; min-width: 0px;  max-width: 50%; display: inline-block;" class = "liberatorFont center"> 
+      <span class = "liberatorFontLargeBlack"><br> omi <br></span>
+        Harish Kandaswamy<br><br>
+        Position: DPS - Heroes: Widowmaker, Cassidy <br><br>
+        Omi is Sacramento state's hard carry. The team name should be renamed omi and the noobs. While we feed,
+        Omi doinks their whole team with head shots. if only we had six omi's, we would have a winning record.
+        <br><br><br><br><br><br></p>
+    </div>
+
+
+    <!------------------------------------------------------------- Super Smash Bros Team Header---------------------------------------------------------->
+    <div div class= "greenBg2" id ="ssbu-teams">
+      <p class = liberatorFontLargeWhite>SUPER SMASH BROS<br></p>
+    </div>
+  
+    <!-- Start of Super Smash Bros Team Bios -->
+    <!-- SSB Player 1 --> 
+    <div id = "text-container">
+      <img src="images/no-profile-pic-icon.jpg" style= "float:left; position:relative; left: 13%; margin-top: 0.6%" alt="no-profile-pic-icon" height="300" width="300">
+      <p style="position:relative; left:15%; min-width: 0px;  max-width: 50%; display: inline-block;" class = "liberatorFont center"> 
+        <span class = "liberatorFontLargeBlack"><br> Player Gamertag <br></span>
+        Player full name<br><br>
+        Position/Role:  Heroes/Champions:  <br><br>
+        Here is where the Bio/About the player text will be filled. The rest is just filler text. Lorem ipsum 
+        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+        <br><br><br><br><br><br>
+        </p>
+    </div>
+
+    <!-- SSB Player 2 --> 
+    <div id = "text-container">
+      <img src="images/no-profile-pic-icon.jpg" style= "float:left; position:relative; left: 13%; margin-top: 0.6%" alt="no-profile-pic-icon" height="300" width="300">
+      <p style="position:relative; left:15%; min-width: 0px;  max-width: 50%; display: inline-block;" class = "liberatorFont center"> 
+        <span class = "liberatorFontLargeBlack"><br> Player Gamertag <br></span>
+        Player full name<br><br>
+        Position/Role:  Heroes/Champions:  <br><br>
+        Here is where the Bio/About the player text will be filled. The rest is just filler text. Lorem ipsum 
+        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+        <br><br><br><br><br><br>
+      </p>
+    </div>
+    <!-- End of Player Bios --> 
+
+    
+  
+
+
+    <!---------------------------------------------------------------------- Start of Footer ---------------------------------------------------------------------------->  
+    <footer class="footer-container">
+    <!-- Esports Logo on Footer -->  
+    <img src="images/esports.png" class="esportsLogo2" atl="sacState logo">
+          <!-- Sport Club of CSUS text --> 
+          <p class="footInfo delete" style>
+            Official Sport Club of <a href="https://www.csus.edu"target="_blank" rel="noopener noreferrer" class="numberHref">California State University, Sacramento</a>.
+          </p>
+
+          <!-- Footer Social Media Links --> 
+          <ul style = "position:relative; top: 15px; left:50px" >
+            <a href="https://twitter.com/esports_sac" target="_blank" rel="noopener noreferrer"> <img class="social-resize" src="images/twitter_icon.png"  alt="twitter logo"></a>
+            <a href="https://www.instagram.com/sacstateesportsclub/" target="_blank" rel="noopener noreferrer"><img class="social-resize " src="images/ig_icon.png" style = "position:relative; left: 35px;" alt="instagram logo"></a>
+            <a href="https://www.twitch.tv/sacstateesportsclub"target="_blank" rel="noopener noreferrer"><img class="social-resize" style = "position:relative; left: 70px;" src="images/twitch_icon.png"   alt="twitch logo"></a>
+            <a href="https://discord.gg/nRgzJXqMaK" target="_blank" rel="noopener noreferrer"><img class="social-resize " style = "position:relative; left: 105px;" src="images/discord_icon.png"  alt="discord logo"></a>
+          </ul>
+    </footer>
+    <!-------------------------------------------------------------------------- End of Footer -------------------------------------------------------------------------> 
+
+  </body>
+
+
+  <!-- Join Team Button -->
+  <div class="bg-modal" id="modal">
+    <div class="modal-content">
+      <h2 class="modal-title">INQUIRY TO JOIN A TEAM</h2>
+      <form method="post" action="inquiry-form.php">
+        <div class="close" id="close">+</div>
+          <script src="index.js"></script>
+
+          <input name="first-name" type="text" placeholder="First name" required>
+          <input name="last-name" type="text" placeholder="Last name" required>
+          <input name="students-email" type="email" placeholder="Student E-mail" required pattern=".+@csus\.edu" title="E-email must end with @csus.edu">
+          <textarea name="students-about" rows="5" placeholder="Tell us about yourself!"></textarea>
+   
+          <!-- Drop list for Inquiry Form -->
+          <select name="game-interest" class="Game type" required>
+            <option disabled selected value="">Pick a team</option>
+            <option value="Vanguard">Valorant</option>
+            <option value="LOL">Leage of Legends</option>
+            <option value="Overwatch">Overwatch</option>
+            <option value="SSB">Super Smash Bros</option>
+          </select>
+          <button type="submit" class="submit-button" value="Submit">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- Start of Database Code 
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-analytics.js";
+    import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-firestore.js";
+    var firebaseConfig = {
+      apiKey: "AIzaSyAqokPjgpp4dcdwZmXNRBXdaYvayaGGpyg",
+      authDomain: "senior-project-4f3bb.firebaseapp.com",
+      databaseURL: "https://senior-project-4f3bb-default-rtdb.firebaseio.com",
+      projectId: "senior-project-4f3bb",
+      storageBucket: "senior-project-4f3bb.appspot.com",
+      messagingSenderId: "160860532291",
+      appId: "1:160860532291:web:01005a9de5c82beb162ef6",
+      measurementId: "G-0BDYPJ0YY4"
+    };
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore(app);
+    var playerData = [];
+    async function getData() {
+      try {
+        const querySnapshot = await getDocs(collection(db, "SportsClub"));
+        querySnapshot.forEach((doc) => {
+          playerData.push(doc.data())
+        });
+        var groupByTeamData = groupBy(playerData, 'team');
+        var row = "";
+        var index=1;
+        for (let [key, value] of Object.entries(groupByTeamData)) {
+          document.getElementById("team"+index).href="#"+key;
+          index++;
+          row += `<div class = "greenBg2" id="${key}"><p class="liberatorFontLargeWhite">${key}<br></p></div>`;
+         
+          for (let rowData of value) {
+            row += `<div id = "text-container" ><div><img src="${rowData.image}" style="float:left; position:relative; left: 13%;" alt="picture" height="300" width="300">
+                       <p style="position:relative; left:15%; min-width: 0px;  max-width: 50%; display: inline-block;"
+                        class="liberatorFont center"><span class="liberatorFontLarge"> ${rowData.playerName} <br></span>
+                        ${rowData.name}<br><br>                        
+                        Position: ${rowData.roles}  <br><br>
+                       ${rowData.description}<br><br><br><br><br><br><br></p></div></div>`;
+          }
+        }
+        $("#teamRows").append(row);
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
+    }
+    getData();
+    var groupBy = function (data, key) {
+      return data.reduce(function (rv, x) {
+        (rv[x[key]] = rv[x[key]] || []).push(x);
+        return rv;
+      }, {});
+    };
+  </script>
+ 
+<footer class="footer-container">
+
+  <img src="images/esports.png" class="esportsLogo2" atl="sacState logo">
+        
+        
+         <p class="footInfo delete" style>
+           Official Sport Club of <a href="https://www.csus.edu"target="_blank" rel="noopener noreferrer" class="numberHref">California State University, Sacramento</a>.
+         </p>
+   
+         
+         <ul style = "position:relative; top: 15px; left:50px" >
+           <a href="https://twitter.com/esports_sac" target="_blank" rel="noopener noreferrer"> <img class="social-resize" src="images/twitter_icon.png"  alt="twitter logo"></a>
+           <a href="https://www.instagram.com/sacstateesportsclub/" target="_blank" rel="noopener noreferrer"><img class="social-resize " src="images/ig_icon.png" style = "position:relative; left: 35px;" alt="instagram logo"></a>
+           <a href="https://www.twitch.tv/sacstateesportsclub"target="_blank" rel="noopener noreferrer"><img class="social-resize" style = "position:relative; left: 70px;" src="images/twitch_icon.png"   alt="twitch logo"></a>
+           <a href="https://discord.com/invite/hfxzm88" target="_blank" rel="noopener noreferrer"><img class="social-resize " style = "position:relative; left: 105px;" src="images/discord_icon.png"  alt="discord logo"></a>
+         </ul>
+ </footer>
+ End of Database Code -->
+
+  
+</html>

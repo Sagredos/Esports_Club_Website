@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Esports club Sign-up</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link rel="stylesheet" href="Sinup_styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="brand"><span>Esports</span> Clubs</h1>
+        <a class="brand" id="signOut" href="javascript:void(0)">Signout</a>
+        <div class="wrapper">
+            <div class="Playername-info">
+                <h3>Esports club Sign-up</h3>
+                <ul>
+                    <li><i class="fa fa-road"></i> 6000 J Street, Sacramento, CA 95819 </li>
+                    <li><i class="fa fa-roles"></i> 9162786011</li>
+                    <li><i class="fa fa-envelope"></i> test@sportsclub.test</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Sign-up</h3>
+                <div class="alert">Submitted</div>
+                <form id="contactForm" onsubmit="javascript:void(0);">
+                    <p>
+                        <label>Name</label>
+                        <input type="text" name="name" value="" id="name" required>
+                    </p>
+            
+                    <p>
+                        <label>Player Name/ Username</label>
+                        <input type="text" name="playerName" value="" id="playerName">
+                    </p>
+                    <p>
+                        <label>Team name</label>
+                        <select style = "width:100%; height:65%;" class="Game type" name="team" id = "team">
+                            <option disabled selected> </option>
+                            <option  value="League of Legends" required >League of Legends</option>
+                            <option  value="Overwatch" required >Overwatch</option>
+                            <option  value="Valorant"  required >Valorant</option>
+                            <option  value="Super Smash Bros" text = "Super Smash Bros" required >Super Smash Bros</option>
+                          </select>
+                    </p>
+                    <p>
+                        <label>Roles</label>
+                        <input type="text" name="roles" value="" id="roles">
+                    </p>
+                    <p class="full">
+                        <label>Description</label>
+                        <textarea name="description" rows="5" id="description"></textarea>
+                    </p>
+                    <p class="full">
+                    <p>Click on the "Choose File" button to upload a picture:</p>
+
+
+                    <input type="file" id="myFile" accept="image/*" name="filename">
+
+                    <button id="saveBtn" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+        import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+        var firebaseConfig = {
+            apiKey: "AIzaSyAqokPjgpp4dcdwZmXNRBXdaYvayaGGpyg",
+            authDomain: "senior-project-4f3bb.firebaseapp.com",
+            databaseURL: "https://senior-project-4f3bb-default-rtdb.firebaseio.com",
+            projectId: "senior-project-4f3bb",
+            storageBucket: "senior-project-4f3bb.appspot.com",
+            messagingSenderId: "160860532291",
+            appId: "1:160860532291:web:01005a9de5c82beb162ef6",
+            measurementId: "G-0BDYPJ0YY4"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const db = getFirestore(app);
+        const database = getDatabase(app);
+
+        var authData = {};
+        const auth = getAuth();
+
+        if (localStorage.getItem("auth") && localStorage.getItem("auth") != 'undefined' && localStorage.getItem("auth") != 'null') {
+            authData = JSON.parse(localStorage.getItem("auth"))
+        } else {
+            location.href   = "login.html";
+        }
+        document.getElementById('signOut').addEventListener('click', signOutFunction);
+        function signOutFunction(e) {
+            signOut(auth).then(() => {
+                localStorage.setItem("auth", null);
+                location.href = "teams.html";
+            }).catch((error) => {
+                alert(error)
+                location.href = "login.html";
+            });
+        }
+        document.getElementById('contactForm').addEventListener('submit', submitForm);
+        async function submitForm(e) {
+            e.preventDefault();
+            var name = getInputVal('name');
+            var playerName = getInputVal('playerName');
+            var team = getInputVal('team');
+            var roles = getInputVal('roles');
+            var description = getInputVal('description');
+            const file = document.getElementById('myFile').files[0];
+            var imageStr = await toBase64(file);
+            if (!imageStr)
+                imageStr = "";
+            savebiography(name, playerName, team, roles, description, imageStr);
+            document.querySelector('.alert').style.display = 'block';
+            setTimeout(function () {
+                document.querySelector('.alert').style.display = 'none';
+            }, 2000);
+            document.getElementById('contactForm').reset();
+        }
+
+        const toBase64 = file => new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = () => resolve(reader.result);
+            reader.onerror = error => reject(error);
+        });
+        async function savebiography(name, playerName, team, roles, description, image) {
+            try {
+                const docRef = await addDoc(collection(db, "SportsClub"), {
+                    name: name,
+                    playerName: playerName,
+                    team: team,
+                    roles: roles,
+                    description: description,
+                    image: image,
+                });
+                console.log("Document written with ID: ", docRef.id);
+            } catch (e) {
+                console.error("Error adding document: ", e);
+            }
+        }
+
+        function getInputVal(id) {
+            return document.getElementById(id).value;
+        }
+    </script>
+</body>
+
+</html>
+

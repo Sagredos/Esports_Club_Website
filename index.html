@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sac State Esports Club</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href='style.css' rel='stylesheet'>
+  </head>
+
+ <body class="background-image">
+    <!-- Header-->
+    <div class="header">
+      <a href="index.html"><img src="images/esports.png" class="esportsLogo" alt="Esports logo" ></a>
+
+      <div class="nav liberatorFont">
+        <nav>
+          <ul id="navList">
+            <!-- Join Button -->
+            <button class="join-button liberatorFont" id='button'>JOIN OUR TEAM</button>
+            <script src="index.js"></script>
+
+            <!-- Nav Links -->
+            <li><a href="watch.html" class="navButtons">WATCH</a></li>
+            <li><a href="teams.html" class="navButtons">TEAMS</a></li>
+            <li><a href="match.html" class="navButtons">MATCH</a></li>
+            <li><a href="about.html" class="navButtons">ABOUT</a></li>
+            <li><a href="contact.html" class="navButtons">CONTACT</a></li>
+          </ul>
+
+          <!--Drop down form small screens, does not display with big screens -->
+          <div class="dropdown">
+            <img src="images/menuImg.png" class="menuImage"/>
+            <div class="dropdown-content">
+              <a href="watch.html"> WATCH </a>
+              <a href="teams.html"> TEAMS </a>
+              <a href="match.html">  MATCH </a>
+              <a href="about.html"> ABOUT </a>
+              <a href="contact.html"> CONTACT </a>
+            </div>
+          </div>
+
+          <ul class = "zIndex">
+            <a href="https://twitter.com/esports_sac" target="_blank" rel="noopener noreferrer"><img class="social-resize" src="images/twitter_icon.png"  alt="twitter logo"></a>
+            <a href="https://www.instagram.com/sacstateesportsclub/" target="_blank" rel="noopener noreferrer"><img class="social-resize " src="images/ig_icon.png" style = "position:relative; left: 35px;" alt="instagram logo"></a>
+            <a href="https://www.twitch.tv/sacstateesportsclub"target="_blank" rel="noopener noreferrer"><img class="social-resize" style = "position:relative; left: 70px;" src="images/twitch_icon.png"   alt="twitch logo"></a>
+            <a href="https://discord.gg/nRgzJXqMaK" target="_blank" rel="noopener noreferrer"><img class="social-resize " style = "position:relative; left: 105px;" src="images/discord_icon.png"  alt="discord logo"></a>
+          </ul>
+        </nav>
+       </div>
+   </div>
+
+
+   <!-- <img src="images/home2.png" class="homeImg" alt="Cover page" > -->
+   <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="images/home2.png" class="homeImg2">
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="images/home6.png" class="homeImg">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/home4.png" class="homeImg">
+
+
+      </div>
+    </div>
+    <hr/>
+
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 6000); // Change image every 6 seconds
+    }
+  </script>
+  
+  <!-- End of slide cotnainer -->
+
+
+   <div class = "greenBg ">
+     <h1 class = "liberatorFontLargeWhite center"> <br> INTERESTED IN ESPORTS?<br><br> </h1>
+     <p class="liberatorFontWhite maxWidth1 center">
+        Are you a Sacramento State student? Have you ever thought of taking your gaming to the next level? If so, Sacramento
+        State has recently added an Esports Club to compete with other Universities in Electronic Sports. The current 
+        teams consist of Overwatch, League of Legends, Super Smash Bros. Ultimate and Valorant, and we are always open to creating
+        more teams when enough players are available. If you are interested in joining a team, click on the "join our team" 
+        button on the top of the page. <br><br><br>
+        <br>
+      </p>
+   </div>
+
+    <!-- Container for center content-->
+   <aside class="aside-container">
+     <!-- Container for twitter -->
+     <div class="twitter-container">
+       <a class="twitter-timeline" data-width="520" data-height="600" data-theme="light" 
+       href="https://twitter.com/esports_sac?ref_src=twsrc%5Etfw">Tweets by esports_sac</a> 
+       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+     </div>
+
+     <!-- Container for event list -->
+     <div class="event-container">
+       <h3 class="year liberatorFont"> Spring 2022 </h3>
+
+        <!-- The first listed event -->
+       <a href="match.html">
+        <div class="event">
+          <div class="event-left">
+               <div class="event-date">
+              <div class="date">3</div>
+              <div class="month">Mar</div>
+           </div>
+         </div>
+
+         <div class="event-right">
+            <h3 class="event-title">Sacramento Vs Fresno </h3>
+
+           <div class="event-description">
+              This is event will be taking place on March 3rd, 2022 at Fresno state University.
+            </div>
+
+           <div class="event-timing">
+             10:10am
+           </div>
+
+          </div>
+       </div>
+       </a>
+
+       <!-- The second listed event -->
+       <a href="match.html">
+       <div class="event">
+         <div class="event-left">
+            <div class="event-date">
+              <div class="date">16</div>
+             <div class="month">Mar</div>
+           </div>
+         </div>
+
+          <div class="event-right">
+           <h3 class="event-title">Sacramento Vs Davis</h3>
+
+           <div class="event-description">
+             This is the description of the event.
+           </div>
+
+           <div class="event-timing">
+              12:00pm
+           </div>
+         </div>
+       </div>
+       </a>
+
+       <!-- The third listed event -->
+       <a href="match.html">
+       <div class="event">
+         <div class="event-left">
+           <div class="event-date">
+             <div class="date">23</div>
+            <div class="month">Mar</div>
+           </div>
+         </div>
+
+         <div class="event-right">
+          <h3 class="event-title">Sacramento Vs Berkley</h3>
+
+          <div class="event-description">
+            This is the description of the event.
+          </div>
+
+          <div class="event-timing">
+             12:00pm
+          </div>
+         </div>
+       </div>
+       </a>
+
+       <!-- The fourth listed event -->
+       <a href="match.html">
+        <div class="event">
+          <div class="event-left">
+            <div class="event-date">
+              <div class="date">23</div>
+             <div class="month">Mar</div>
+            </div>
+          </div>
+ 
+          <div class="event-right">
+           <h3 class="event-title">Sacramento Vs Chico </h3>
+ 
+           <div class="event-description">
+             This is the description of the event.
+           </div>
+ 
+           <div class="event-timing">
+              11:00am
+           </div>
+          </div>
+        </div>
+        </a>
+     </div>
+   </aside>
+
+    <footer class ="footer-container">
+
+      <img src="images/esports.png" class="esportsLogo2" atl="sacState logo">
+     
+     
+      <p class="footInfo delete" style>
+        Official Sport Club of <a href="https://www.csus.edu"target="_blank" rel="noopener noreferrer" class="numberHref">California State University, Sacramento</a>.
+      </p>
+
+  
+      <ul style = "position:relative; top: 15px; left:50px" >
+        <a href="https://twitter.com/esports_sac" target="_blank" rel="noopener noreferrer"> <img class="social-resize" src="images/twitter_icon.png"  alt="twitter logo"></a>
+        <a href="https://www.instagram.com/sacstateesportsclub/" target="_blank" rel="noopener noreferrer"><img class="social-resize " src="images/ig_icon.png" style = "position:relative; left: 35px;" alt="instagram logo"></a>
+        <a href="https://www.twitch.tv/sacstateesportsclub"target="_blank" rel="noopener noreferrer"><img class="social-resize" style = "position:relative; left: 70px;" src="images/twitch_icon.png"   alt="twitch logo"></a>
+        <a href="https://discord.gg/nRgzJXqMaK" target="_blank" rel="noopener noreferrer"><img class="social-resize " style = "position:relative; left: 105px;" src="images/discord_icon.png"  alt="discord logo"></a>
+      </ul>
+
+    </footer>
+ </body>
+
+    <!-- Modal Section -->
+  <div class="bg-modal" id="modal">
+   <div class="modal-content">
+      <h2 class="modal-title">INQUIRY TO JOIN A TEAM</h2>
+
+      <form method="post" action="inquiry-form.php">
+       <div class="close" id="close">+</div>
+       <script src="index.js"></script>
+
+        <input name="first-name" type="text" placeholder="First name" required>
+        <input name="last-name" type="text" placeholder="Last name" required>
+        <input name="students-email" type="email" placeholder="Student E-mail" required pattern=".+@csus\.edu" title="E-email must end with @csus.edu">
+        <textarea name="students-about" rows="5" placeholder="Tell us about yourself!"></textarea>
+
+       <!-- Drop list for Inquiry Form -->
+       <select name="game-interest" class="Game type" required>
+          <option disabled selected value="">Pick a team</option>
+          <option value="Vanguard">Valorant</option>
+          <option value="LOL">Leage of Legends</option>
+          <option value="Overwatch">Overwatch</option>
+          <option value="SSB">Super Smash Bros</option>
+        </select>
+        <button type="submit" class="submit-button" value="Submit">SUBMIT</button>
+     </form>
+   </div>
+ </div>
+</html>

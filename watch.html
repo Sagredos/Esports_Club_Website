@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <title>Watch</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href='style.css' rel='stylesheet'>
+  </head>
+
+  <body class="background-image">
+    <!-- Header-->
+    <div class="header">
+      <a href="index.html"><img src="images/esports.png" class="esportsLogo" alt="Esports logo" ></a>
+
+      <div class="nav liberatorFont">
+        <nav>
+          <ul id="navList">
+            <!-- Join Button -->
+            <button class="join-button liberatorFont" id='button'>JOIN OUR TEAM</button>
+            <script src="index.js"></script>
+
+            <!-- Nav Links -->
+            <li><a href="watch.html" class="navButtons">WATCH</a></li>
+            <li><a href="teams.html" class="navButtons">TEAMS</a></li>
+            <li><a href="match.html" class="navButtons">MATCH</a></li>
+            <li><a href="about.html" class="navButtons">ABOUT</a></li>
+            <li><a href="contact.html" class="navButtons">CONTACT</a></li>
+          </ul>
+
+          <!--Drop down form small screens, does not display with big screens -->
+          <div class="dropdown">
+            <img src="images/menuImg.png" class="menuImage"/>
+            <div class="dropdown-content">
+              <a href="watch.html"> WATCH </a>
+              <a href="teams.html"> TEAMS </a>
+              <a href="match.html">  MATCH </a>
+              <a href="about.html"> ABOUT </a>
+              <a href="contact.html"> CONTACT </a>
+            </div>
+          </div>
+
+          <ul class = "zIndex">
+            <a href="https://twitter.com/esports_sac" target="_blank" rel="noopener noreferrer"><img class="social-resize" src="images/twitter_icon.png"  alt="twitter logo"></a>
+            <a href="https://www.instagram.com/sacstateesportsclub/" target="_blank" rel="noopener noreferrer"><img class="social-resize " src="images/ig_icon.png" style = "position:relative; left: 35px;" alt="instagram logo"></a>
+            <a href="https://www.twitch.tv/sacstateesportsclub"target="_blank" rel="noopener noreferrer"><img class="social-resize" style = "position:relative; left: 70px;" src="images/twitch_icon.png"   alt="twitch logo"></a>
+            <a href="https://discord.gg/nRgzJXqMaK" target="_blank" rel="noopener noreferrer"><img class="social-resize " style = "position:relative; left: 105px;" src="images/discord_icon.png"  alt="discord logo"></a>
+          </ul>
+        </nav>
+       </div>
+   </div>
+
+
+
+
+<!-- start of upper upper container-->
+<div class="TitleContainer" id = "text-container">
+  <!-- Left Title-->
+  <div class=" LeftTitle">
+    <h3 class="watch-title" >WATCH US LIVE</h3>
+  </div>
+
+    <!-- Right Title-->
+  <div class=" RightTitle">
+    <h3 class="watch-title2" >CLIP OF THE WEEK</h3>
+  </div>
+</div>
+
+<!-- start of upper-->
+<div class="UpperContainer">
+
+  <!-- Twitch Stream -->
+  <div class="twitch1" id="twitch-embed">
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+  <script type="text/javascript">
+    new Twitch.Player("twitch-embed", {
+      width: "40%",
+      height: "100%",
+      channel: "sacstateesportsclub"
+    });
+  </script>
+  </div>
+
+  <!-- Right video  (Clip of the Week)-->
+  <div class="youtubeTopRight">
+    <iframe id="youtube-frame-topright" src="https://www.youtube.com/embed/U7EvCXEDoxw"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <!-- end of upper-->
+</div>
+
+<!-- middle for title-->
+<div class="MiddleContainer">
+  <h1 class="match-title" id = "text-container">
+  HIGHLIGHTS
+  </h1>
+</div>
+<!--end of middle-->
+
+<!-- start of bottom-->
+<div class="BottomContainer">
+  
+  <!-- Bottom Video 1 -->
+  <div class="youtubeBottom1">
+    <iframe id="youtube-frame-bottom1" src="https://www.youtube.com/embed/HpWmKJt9Msk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <!-- Bottom Video 2 -->
+  <div class="youtubeBottom2">
+    <iframe id="youtube-frame-bottom2" src="https://www.youtube.com/embed/JeEFRqfPGb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <!-- Bottom Video 3 -->
+  <div class="youtubeBottom3">
+    <iframe id="youtube-frame-bottom3" src="https://www.youtube.com/embed/-h1GtK_nOLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <!-- Bottom Video 4 -->
+  <div class="youtubeBottom4">
+    <iframe id="youtube-frame-bottom4" src="https://www.youtube.com/embed/wlPtO7UM05c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <!-- Bottom Video 5 -->
+  <div class="youtubeBottom5">
+    <iframe id="youtube-frame-bottom5" src="https://www.youtube.com/embed/vFb4Pj5cwsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+
+</div>
+<!-- end of bottom-->
+
+  <footer class ="footer-container">
+
+    <img src="images/esports.png" class="esportsLogo2" atl="sacState logo">
+   
+   
+    <p class="footInfo delete" style>
+      Official Sport Club of <a href="https://www.csus.edu"target="_blank" rel="noopener noreferrer" class="numberHref">California State University, Sacramento</a>.
+    </p>
+
+
+    <ul style = "position:relative; top: 15px; left:50px" >
+      <a href="https://twitter.com/esports_sac" target="_blank" rel="noopener noreferrer"> <img class="social-resize" src="images/twitter_icon.png"  alt="twitter logo"></a>
+      <a href="https://www.instagram.com/sacstateesportsclub/" target="_blank" rel="noopener noreferrer"><img class="social-resize " src="images/ig_icon.png" style = "position:relative; left: 35px;" alt="instagram logo"></a>
+      <a href="https://www.twitch.tv/sacstateesportsclub"target="_blank" rel="noopener noreferrer"><img class="social-resize" style = "position:relative; left: 70px;" src="images/twitch_icon.png"   alt="twitch logo"></a>
+      <a href="https://discord.gg/nRgzJXqMaK" target="_blank" rel="noopener noreferrer"><img class="social-resize " style = "position:relative; left: 105px;" src="images/discord_icon.png"  alt="discord logo"></a>
+    </ul>
+
+  </footer>
+</body>
+    <!-- Modal Section -->
+    <div class="bg-modal" id="modal">
+      <div class="modal-content">
+         <h2 class="modal-title">INQUIRY TO JOIN A TEAM</h2>
+   
+         <form method="post" action="inquiry-form.php">
+          <div class="close" id="close">+</div>
+          <script src="index.js"></script>
+   
+           <input name="first-name" type="text" placeholder="First name" required>
+           <input name="last-name" type="text" placeholder="Last name" required>
+           <input name="students-email" type="email" placeholder="Student E-mail" required pattern=".+@csus\.edu" title="E-email must end with @csus.edu">
+           <textarea name="students-about" rows="5" placeholder="Tell us about yourself!"></textarea>
+   
+          <!-- Drop list for Inquiry Form -->
+          <select name="game-interest" class="Game type" required>
+             <option disabled selected value="">Pick a team</option>
+             <option value="Vanguard">Valorant</option>
+             <option value="LOL">Leage of Legends</option>
+             <option value="Overwatch">Overwatch</option>
+             <option value="SSB">Super Smash Bros</option>
+           </select>
+           <button type="submit" class="submit-button" value="Submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+   </html>

@@ -1,0 +1,161 @@
+<!-- DOCTYPE html-->
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='style.css' rel='stylesheet'>
+  </head>
+
+  <body class="background-image">
+    <!-- Header-->
+    <div class="header">
+      <a href="index.html"><img src="images/esports.png" class="esportsLogo" alt="Esports logo" ></a>
+
+      <div class="nav liberatorFont">
+        <nav>
+          <ul id="navList">
+            <!-- Join Button -->
+            <button class="join-button liberatorFont" id='button'>JOIN OUR TEAM</button>
+            <script src="index.js"></script>
+
+            <!-- Nav Links -->
+            <li><a href="watch.html" class="navButtons">WATCH</a></li>
+            <li><a href="teams.html" class="navButtons">TEAMS</a></li>
+            <li><a href="match.html" class="navButtons">MATCH</a></li>
+            <li><a href="about.html" class="navButtons">ABOUT</a></li>
+            <li><a href="contact.html" class="navButtons">CONTACT</a></li>
+          </ul>
+
+          <!--Drop down form small screens, does not display with big screens -->
+          <div class="dropdown">
+            <img src="images/menuImg.png" class="menuImage"/>
+            <div class="dropdown-content">
+              <a href="watch.html"> WATCH </a>
+              <a href="teams.html"> TEAMS </a>
+              <a href="match.html">  MATCH </a>
+              <a href="about.html"> ABOUT </a>
+              <a href="contact.html"> CONTACT </a>
+            </div>
+          </div>
+        </nav>
+       </div>
+   </div>
+
+  
+      <div id = "text-container">
+        <h3 class ="match-title"> CONTACT US</h3>
+      </div> 
+
+    
+
+
+
+    
+     <div class = "row">
+        <!--Interactive Map Container -->
+        
+            <div class=" col-md-6 mapouter" style ="position:relative; left:10%; padding-top: 20px;">
+              <div class="gmap_canvas leftside d-flex justify-content-center"><iframe width="75%" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=sacramento%20state&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        
+            </div>
+          </div>
+        
+      
+
+        <!--Contact Information Container-->
+        <div class ="col-md-6">
+          <div class = "rightside d-flex justify-content-center " >
+            <p class ="liberatorFont ">
+              <span class ="liberatorFontLargeBlack"><br>President<br></span>
+
+              <!--President's Name-->
+              <span class = liberatorFontBlack>Sean Tirado</span>
+
+              <!-- President's Email-->
+              <br>Email: Seantirado@csus.edu
+
+              <!--Presidents Email-->
+              <br>Discord: NotMichael#0593<br>
+
+            <!--Social Media Links-->
+            <br><a href="https://twitter.com/esports_sac" target="_blank"><img class="social-resize" src="images/twitter_icon.png"> Twitter &nbsp </a> <a href="https://discord.gg/nRgzJXqMaK" target="_blank"><img class="social-resize" src="images/discord_icon.png"> Discord </a>
+            <br><br> <a href><img class="social-resize" src="images/twitch_icon.png"> Twitch</a>&nbsp&nbsp&nbsp&nbsp<a href="https://www.instagram.com/esportssacstate/" target="_blank"><img class="social-resize" src="images/ig_icon.png"> Instagram  </a> </p>   
+          </div>
+        </div>
+    </div>
+
+
+      <!--Contact Form Container-->
+    <div style = "padding-top: 50px; padding-bottom: 50px">
+    <form id="contact-form" method="post" action="contact-action.php">
+      <input name ="name" type="text" class="form-control" placeholder="Your Name..."  style ="width:75%; min-width: 170px"  required>
+    
+      <input name ="email" type="text" class="form-control" placeholder="Email..." style ="width:75%; min-width: 170px" required>
+      <textarea name="subject" class="form-control" placeholder="Enter Message..." style ="height:200px; width:75%; min-width: 170px; position: relative; left: 12.5%" required></textarea>
+      <input type="submit" class="form-control submit" style ="width:75%; min-width: 170px;" value ="Submit" >
+    </form>
+    </div>
+  
+      <!--Admin Login Button
+    <div style="text-align: right;">
+      <a href="login.html" style = "text-align: end;"> Admin Login </a>
+    </div>
+    ----------Delete Comment to add admin button(if database is used)-->
+
+
+  <!-- Footer container -->
+  <footer class ="footer-container">
+
+    <img src="images/esports.png" class="esportsLogo2" atl="sacState logo">
+   
+   
+    <p class="footInfo delete" style>
+      Official Sport Club of <a href="https://www.csus.edu"target="_blank" rel="noopener noreferrer" class="numberHref">California State University, Sacramento</a>.
+    </p>
+
+
+    <ul style = "position:relative; top: 15px; left:50px" >
+      <a href="https://twitter.com/esports_sac" target="_blank" rel="noopener noreferrer"> <img class="social-resize" src="images/twitter_icon.png"  alt="twitter logo"></a>
+      <a href="https://www.instagram.com/sacstateesportsclub/" target="_blank" rel="noopener noreferrer"><img class="social-resize " src="images/ig_icon.png" style = "position:relative; left: 35px;" alt="instagram logo"></a>
+      <a href="https://www.twitch.tv/sacstateesportsclub"target="_blank" rel="noopener noreferrer"><img class="social-resize" style = "position:relative; left: 70px;" src="images/twitch_icon.png"   alt="twitch logo"></a>
+      <a href="https://discord.gg/nRgzJXqMaK" target="_blank" rel="noopener noreferrer"><img class="social-resize " style = "position:relative; left: 105px;" src="images/discord_icon.png"  alt="discord logo"></a>
+    </ul>
+
+  </footer>
+
+</body>
+
+  <!-- Modal Section -->
+  <div class="bg-modal" id="modal">
+    <div class="modal-content">
+       <h2 class="modal-title">INQUIRY TO JOIN A TEAM</h2>
+       
+       <form action="inquiry-form">
+ 
+        <div class="close" id="close">+</div>
+        <script src="index.js"></script>
+ 
+         <input type="text" placeholder="First name">
+         <input type="text" placeholder="Last name">
+         <input type="text" placeholder="Student E-mail">
+         <textarea rows="5">
+         Tell us about yourself!
+         </textarea>
+ 
+        <!-- Drop list for Inquiry Form -->
+        <select class="Game type">
+           <option disabled selected value>Pick a team</option>
+           <option value="LOL">Leage of Legends</option>
+           <option value="Overwatch">Overwatch</option>
+           <option value="Vanguard">Vanguard</option>
+           <option value="RocketLeague">Rocket League</option>
+           <option value="CSGO">CSGO</option>
+         </select>
+         <a href="index.html" class="submit-button">SUBMIT</a>
+      </form>
+    </div>
+  </div>
+
+</html>
